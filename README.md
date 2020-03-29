@@ -1,1 +1,2 @@
-# epamsql
+## EPAM tasks
+## language: SQL
