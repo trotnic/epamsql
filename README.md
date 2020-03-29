@@ -1,2 +1,2 @@
-## EPAM tasks
+## MMF/EPAM tasks
 ## language: SQL
