@@ -1,0 +1,17 @@
+'run drop_schema with param user_name = MMF'
+'MMF dropped'
+'run drop_tablespace.sql with param user_name = MMF'
+old   1: DROP TABLESPACE &&TBS_DATA_NAME
+new   1: DROP TABLESPACE MMF_DATA
+
+Tablespace dropped.
+
+Elapsed: 00:00:00.11
+'MMF_DATA dropped'
+old   1: DROP TABLESPACE &&TBS_IDX_NAME
+new   1: DROP TABLESPACE MMF_IDX
+
+Tablespace dropped.
+
+Elapsed: 00:00:00.11
+'MMF_IDX dropped'
