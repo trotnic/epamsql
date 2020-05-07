@@ -5,8 +5,10 @@ DEFINE USER_NAME = &&1
 CONNECT &&USER_NAME/oracle
 
 @./upgrade001/create_table_department.sql
-@./upgrade001/create_table_person.sql
-@./upgrade001/create_table_persons_roles.sql
+@./upgrade001/create_table_employee_role.sql
+@./upgrade001/create_table_employee_skill.sql
+@./upgrade001/create_table_employee.sql
+@./upgrade001/create_table_project_stage.sql
 @./upgrade001/create_table_project.sql
 @./upgrade001/create_table_role.sql
 @./upgrade001/create_table_skill.sql
