@@ -1,12 +1,9 @@
 CREATE TABLE TEAM (
     ID NUMBER GENERATED ALWAYS AS IDENTITY INCREMENT BY 1 START WITH 1 MINVALUE 1 NOT NULL,
-    DEPARTMENT_ID NUMBER NOT NULL,
     PROJECT_ID NUMBER,
-    LEAD_ID NUMBER NOT NULL,
-    CONSTRAINT PK_TEAM PRIMARY KEY (ID) ENABLE
-)
-TABLESPACE MMF_9_3_DATA;
+    LEAD_ID NUMBER,
+);
 
--- COMMENT ON COLUMN TEAM.ID IS 'Unique value, serves as the primary key';
--- COMMENT ON COLUMN TEAM.DEPARTMENT_ID IS 'Determines a department that a team belongs to';
--- COMMENT ON COLUMN TEAM.PROJECT_ID IS 'Determines a project that a team performs';
+COMMENT ON COLUMN TEAM.ID IS 'Unique value, serves as the primary key';
+COMMENT ON COLUMN TEAM.PROJECT_ID IS 'Current project that team performs';
+COMMENT ON COLUMN TEAM.LEAD_ID IS 'Id of employee that leads a team'

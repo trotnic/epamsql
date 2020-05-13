@@ -15,7 +15,7 @@ CONNECT &&USER_NAME/oracle
 @./upgrade001/create_table_stage.sql
 @./upgrade001/create_table_task.sql
 @./upgrade001/create_table_team.sql
-@./upgrade001/create_fk.sql
+@./upgrade001/create_indexes.sql &&USER_NAME
 
 UNDEFINE USER_NAME
 SPOOL OFF

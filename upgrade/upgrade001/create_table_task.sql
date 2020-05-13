@@ -1,17 +1,17 @@
 CREATE TABLE TASK (
     ID NUMBER GENERATED ALWAYS AS IDENTITY INCREMENT BY 1 START WITH 1 MINVALUE 1 NOT NULL,
+    pkey VARCHAR2(100) NOT NULL,
     STAGE_ID NUMBER NOT NULL,
-    EMPLOYEE_ID NUMBER,
-    TITLE VARCHAR2(100) NOT NULL,
-    DESCRIPTION VARCHAR2(2000) NOT NULL,
-    STATUS NUMBER(8) NOT NULL,
-    CONSTRAINT PK_TASK PRIMARY KEY (ID) ENABLE
-)
-TABLESPACE MMF_9_3_DATA;
+    ASSIGNEE_ID NUMBER,
+    NAME VARCHAR2(150) NOT NULL,
+    DESCRIPTION VARCHAR2(2000),
+    STATUS NUMBER(8) NOT NULL
+);
 
--- COMMENT ON COLUMN TASK.ID IS 'Unique value, serves as the primary key';
--- COMMENT ON COLUMN TASK.STAGE_ID IS 'Determines the stage that the task entity is linked to';
--- COMMENT ON COLUMN TASK.PERFORMER_ID IS 'Determines the employee, who performs a task';
--- COMMENT ON COLUMN TASK.TITLE IS 'Tasks title';
--- COMMENT ON COLUMN TASK.DESCRIPTION IS 'Tasks description';
--- COMMENT ON COLUMN TASK.STATUS IS 'Tasks implementation status';
+COMMENT ON COLUMN TASK.ID IS 'Unique value, serves as the primary key';
+COMMENT ON COLUMN TASK.pkey IS 'Special task code, describes stage that task belongs to';
+COMMENT ON COLUMN TASK.STAGE_ID IS 'Determines the stage that the task entity is linked to';
+COMMENT ON COLUMN TASK.ASSIGNEE_ID IS 'Determines the employee performing a task';
+COMMENT ON COLUMN TASK.NAME IS 'Task name';
+COMMENT ON COLUMN TASK.DESCRIPTION IS 'Task description';
+COMMENT ON COLUMN TASK.STATUS IS 'Task implementation status';
