@@ -2,7 +2,7 @@ SET TIMING ON
 SPOOL UPGRADE_FILE.LOG
 DEFINE USER_NAME = &&1
 
-CONNECT &&USER_NAME/oracle
+CONNECT &&USER_NAME/oracle;
 
 @./upgrade001/create_table_department.sql
 @./upgrade001/create_table_employee_role.sql

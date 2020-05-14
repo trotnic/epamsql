@@ -1,0 +1,21 @@
+CREATE TABLE DATA_TABLE (
+    ID NUMBER GENERATED ALWAYS AS IDENTITY INCREMENT BY 1 START WITH 1 MINVALUE 1 NOT NULL,
+    Project_Name VARCHAR2(300),
+    Project_Description VARCHAR2(300),
+    Project_Start_Date VARCHAR2(300),
+    Project_End_Date VARCHAR2(300),
+    Stage_Name VARCHAR2(300),
+    Stage_Start_Date VARCHAR2(300),
+    Stage_End_Date VARCHAR2(300),
+    Stage_Tasks_Code VARCHAR2(300),
+    Stage_Tasks_Start_Date VARCHAR2(300),
+    Stage_Tasks_End_Date VARCHAR2(300),
+    Stage_Tasks_Name VARCHAR2(300),
+    Stage_Tasks_Status VARCHAR2(300),
+    Assigned_Person_Name VARCHAR2(300),
+    Assigned_Person_Last_Name VARCHAR2(300),
+    Assigned_Person_Position VARCHAR2(300),
+    Assigned_Person_Department VARCHAR2(300),
+    Team_Lead_Name VARCHAR2(300),
+    Team_Lead_Last_Name VARCHAR2(300)
+);
