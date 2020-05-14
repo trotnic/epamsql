@@ -8,7 +8,6 @@ CONNECT &&USER_NAME/oracle
 @./upgrade001/create_table_employee_role.sql
 @./upgrade001/create_table_employee_skill.sql
 @./upgrade001/create_table_employee.sql
-@./upgrade001/create_table_project_stage.sql
 @./upgrade001/create_table_project.sql
 @./upgrade001/create_table_role.sql
 @./upgrade001/create_table_skill.sql
@@ -17,5 +16,5 @@ CONNECT &&USER_NAME/oracle
 @./upgrade001/create_table_team.sql
 @./upgrade001/create_indexes.sql &&USER_NAME
 
-UNDEFINE USER_NAME
+-- UNDEFINE USER_NAME
 SPOOL OFF

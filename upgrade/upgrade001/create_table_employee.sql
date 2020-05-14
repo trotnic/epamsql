@@ -9,9 +9,9 @@ CREATE TABLE EMPLOYEE (
 );
 
 COMMENT ON COLUMN EMPLOYEE.ID IS 'Unique value, serves as the primary key for the table';
-COMMENT ON COLUMN EMPLOYEE.TEAM_ID IS 'Id of team that employee may belongs to'
-COMMENT ON COLUMN EMPLOYEE.DEPARTMENT_ID IS 'Id of department that employee belongs to'
-COMMENT ON COLUMN EMPLOYEE.FIRSTNAME IS 'Employee firstname'
-COMMENT ON COLUMN EMPLOYEE.MIDDLENAME IS 'Employee middlename, may be null in specific cases' 
-COMMENT ON COLUMN EMPLOYEE.LASTNAME IS 'Employee lastname'
-COMMENT ON COLUMN EMPLOYEE.EMAIL IS 'Employee email'
+COMMENT ON COLUMN EMPLOYEE.TEAM_ID IS 'Id of team that employee may belongs to';
+COMMENT ON COLUMN EMPLOYEE.DEPARTMENT_ID IS 'Id of department that employee belongs to';
+COMMENT ON COLUMN EMPLOYEE.FIRSTNAME IS 'Employee firstname';
+COMMENT ON COLUMN EMPLOYEE.MIDDLENAME IS 'Employee middlename, may be null in specific cases' ;
+COMMENT ON COLUMN EMPLOYEE.LASTNAME IS 'Employee lastname';
+COMMENT ON COLUMN EMPLOYEE.EMAIL IS 'Employee email';
