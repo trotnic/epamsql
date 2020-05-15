@@ -3,3 +3,7 @@ CREATE TABLE EMPLOYEE_SKILL (
     EMPLOYEE_ID NUMBER NOT NULL,
     SKILL_ID NUMBER NOT NULL
 );
+
+COMMENT ON COLUMN EMPLOYEE_ROLE.ID IS 'Unique value, serves as the primary key for the table';
+COMMENT ON COLUMN EMPLOYEE_ROLE.EMPLOYEE_ID IS 'Reference to employee table';
+COMMENT ON COLUMN EMPLOYEE_ROLE.EMPLOYEE_ID IS 'Reference to role table';
